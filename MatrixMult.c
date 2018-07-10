@@ -42,8 +42,8 @@ int main(int num,char *args[])
 	
 	 end = clock();
 	 
-	 long t=(end-start);
-	 long t1=t/CLOCKS_PER_SEC;
+	 float t=(end-start);
+	 float t1=t/CLOCKS_PER_SEC;
 	 
 	
 	return t;
