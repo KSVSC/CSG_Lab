@@ -8,7 +8,9 @@ int main(int num,char *args[])
 {
 	int n1=atoi(args[1]);
 	long n=n1;
- 	clock_t start, end;
+
+	clock_t start, end;
+	double t;
  	 	
 	for(long i=0;i<n;i++)
 	{
@@ -41,11 +43,22 @@ int main(int num,char *args[])
 	}
 	
 	 end = clock();
-	 
-	 float t=(end-start);
-	 float t1=t/CLOCKS_PER_SEC;
-	 
+	t =(double) (end - start) / CLOCKS_PER_SEC;
+ 
+ 	printf("%f",t);
+	return 0;
 	
-	return t;
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
